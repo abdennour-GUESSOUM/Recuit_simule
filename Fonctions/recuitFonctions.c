@@ -308,7 +308,7 @@ int main(void)
       {          /* Descente !!              */
         x = y; /* y devient l'etat courant */
         fx = fy;
-        if (fx < F(xopt))
+        if (fx < fxopt)
         { /* Mise a jour optimum ?    */
           xopt = x;
           fxopt = fx;
