@@ -320,10 +320,10 @@ int main(void)
       else
       { /* Remontee : acceptee ??   */
         p = myRandom01();
-        if (...)
+        if (p < exp(-(Df/T)))
         {
-          x = ...; /* y devient l'etat courant */
-          fx = ...;
+          x = y; /* y devient l'etat courant */
+          fx = fy;
         }
       }
 
@@ -335,7 +335,7 @@ int main(void)
       PrintALine(fdResults); /* Sauvegarde resulats courants */
     }
 
-    T = ...; /* modifier la temperature */
+    T = g(); /* modifier la temperature */
 
     usleep(10);
   } /* end while */
