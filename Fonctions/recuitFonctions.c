@@ -37,7 +37,7 @@ double y;                        /* Solution voisine */
 double xopt;                     /* Solution optimale */
 double fx, fy, fxopt;            /* Valeurs */
 
-/*________  Fonctions Exemples  (Fonction de coût) _________________________*/
+/*________  Fonctions Exemples  (Fonction de coï¿½t) _________________________*/
 double f1_1( double t ){ return t*t; }
 
 double f1_2( double t ){ 
@@ -51,15 +51,15 @@ double f1_2( double t ){
 /*________  Voisinage (modification configuration)  ________________________*/
 void transformation(void){
   y = x;                     /* y est au voisinage de x suivant l'amplitude */
-  y = y + ... ;                         /* Apres y = x, modifier y (pas x!) */
+  y = y + amplitude*(myRandom01()-0.5);                         /* Apres y = x, modifier y (pas x!) */
 }
 
-/*________  Modification température  ______________________________________*/
+/*________  Modification tempï¿½rature  ______________________________________*/
 double g(void) {
 #if 1
- return( ... );         /* On decroit la temperature en utilisant T * alpha */
+ return( T * alpha );         /* On decroit la temperature en utilisant T * alpha */
 #else
- return( ... );         /* On decroit la temperature en utilisant T - alpha */
+ return( T-alpha );         /* On decroit la temperature en utilisant T - alpha */
 #endif
 }
 
