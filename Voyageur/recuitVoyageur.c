@@ -171,7 +171,7 @@ double fx, fy, fxopt;    /* Valeurs */
 /*________  Fonctions Exemples  (Fonction de co�t) _______________________*/
 double f(Chemin chemin)
 {
- return ... ;
+ return calculCoutChemin(chemin) ;
 }
 
 /*________  Voisinage (modification configuration)  ______________________*/
