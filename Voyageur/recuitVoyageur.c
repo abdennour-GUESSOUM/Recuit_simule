@@ -120,7 +120,19 @@ void transformationChemin(Chemin *cheminY,
  *cheminY = cheminX; /* *cheminY est au voisinage de cheminX suivant     */
                      /*  l'amplitude. Apres *cheminY =  cheminX, ne plus */
                      /*  modifier cheminX !!!                            */
-  ...
+  int nbBoucle=myRandomMinMax(1,amplitude);
+  for(int i = 0;i< nbBoucle ; i++){
+    int i1 = myRandomMinMax(0,cheminY->nbVilles-1);
+    int i2 = myRandomMinMax(0,cheminY->nbVilles-1);
+    while(i1==i2){
+      i2=myRandomMinMax(0,cheminY->nbVilles-1);
+    }
+    int temp,
+    temp = cheminY->parcours[i1];
+    cheminY->parcours[i1]=cheminX.parcours[i2];
+    cheminX.parcours[i2]=temp;
+  }
+    
 }
 
 /*--------------- Parametres de controle du recuit --------------------*/
@@ -156,7 +168,7 @@ Chemin y;                /* Solution voisine  */
 Chemin xopt;             /* Solution optimale */
 double fx, fy, fxopt;    /* Valeurs */
 
-/*________  Fonctions Exemples  (Fonction de coût) _______________________*/
+/*________  Fonctions Exemples  (Fonction de coï¿½t) _______________________*/
 double f(Chemin chemin)
 {
  return ... ;
