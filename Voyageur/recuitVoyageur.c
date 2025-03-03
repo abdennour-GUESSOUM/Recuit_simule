@@ -127,10 +127,12 @@ void transformationChemin(Chemin *cheminY,
     while(i1==i2){
       i2=myRandomMinMax(0,cheminY->nbVilles-1);
     }
+
+
     int temp;
     temp = cheminY->parcours[i1];
-    cheminY->parcours[i1]=cheminX.parcours[i2];
-    cheminX.parcours[i2]=temp;
+    cheminY->parcours[i1]=cheminY->parcours[i2];
+    cheminY->parcours[i2]=temp;
   }
     
 }
