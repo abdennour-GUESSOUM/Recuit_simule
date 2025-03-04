@@ -114,14 +114,9 @@ void dessineChemin(FILE* flot, Chemin chemin)
  endPointsToGnuplot(flot);
 }
 /*--*/
-void transformationChemin(Chemin *cheminY,
-                          Chemin  cheminX, int amplitude)
+/*----------------mise en place des différents type de transformation */
+void echange(Chemin *cheminY)
 {
- *cheminY = cheminX; /* *cheminY est au voisinage de cheminX suivant     */
-                     /*  l'amplitude. Apres *cheminY =  cheminX, ne plus */
-                     /*  modifier cheminX !!!                            */
-  int nbBoucle=myRandomMinMax(1,amplitude);
-  for(int i = 0;i< nbBoucle ; i++){
     int i1 = myRandomMinMax(0,cheminY->nbVilles-1);
     int i2 = myRandomMinMax(0,cheminY->nbVilles-1);
     while(i1==i2){
@@ -133,7 +128,111 @@ void transformationChemin(Chemin *cheminY,
     temp = cheminY->parcours[i1];
     cheminY->parcours[i1]=cheminY->parcours[i2];
     cheminY->parcours[i2]=temp;
+}
+
+void inversion(Chemin *cheminY)
+{
+  int i1 = myRandomMinMax(0,cheminY->nbVilles-1);
+  int i2 = myRandomMinMax(0,cheminY->nbVilles-1);
+
+  while (i1 == i2)
+  {
+    i2 = myRandomMinMax(0, cheminY->nbVilles - 1);
   }
+  if (i1 > i2)
+  {
+    int tmp = i1;
+    i1 = i2;
+    i2 = tmp;
+  }
+  // [5][6][7][8] -> [8][7][6][5] random 1 ++ random2 --
+  while (i1 < i2)
+  {
+    int temp = cheminY->parcours[i1];
+    cheminY->parcours[i1] = cheminY->parcours[i2];
+    cheminY->parcours[i2] = temp;
+    i1++;
+    i2--;
+  }
+}
+
+void translation(Chemin *cheminY)
+{
+  int index1 = myRandomMinMax(0, cheminY->nbVilles-1);
+  int index2 = myRandomMinMax(0, cheminY->nbVilles-1);
+  int index3 = myRandomMinMax(0, cheminY->nbVilles-1);
+
+  while (index1 == index2 || index2 == index3 || index1 == index3)
+  {
+    if (index1 == index2)
+      index2 = myRandomMinMax(0, cheminY->nbVilles-1);
+    else if (index2 == index3)
+      index3 = myRandomMinMax(0, cheminY->nbVilles-1);
+    else if (index1 == index3)
+      index3 = myRandomMinMax(0, cheminY->nbVilles-1);
+  }
+
+  if (index1 > index2)
+  {
+    int tmp = index1;
+    index1 = index2;
+    index2 = tmp;
+  }
+  if (index2 > index3)
+  {
+    int tmp = index2;
+    index2 = index3;
+    index3 = tmp;
+  }
+  if (index1 > index2)
+  {
+    int tmp = index1;
+    index1 = index2;
+    index2 = tmp;
+  }
+
+  // À partir d'ici, index1 < index2 < index3
+  // Sauvegarder le segment [index1, index2] dans un tableau temporaire
+  int taillesegment = index2 - index1 + 1;
+  int temptab[taillesegment];
+
+  for (int i = 0; i < taillesegment; i++)
+  {
+    temptab[i] = cheminY->parcours[index1 + i];
+  }
+
+  // Déplacer les éléments entre index2+1 et index3 vers la position index1
+  int taillesegment2 = index3 - index2;
+
+  for (int i = 0; i < taillesegment2; i++)
+  {
+    cheminY->parcours[index1 + i] = cheminY->parcours[index2 + 1 + i];
+  }
+
+  // Insérer le segment1 (temptab) sauvegardé à la nouvelle position
+  int position = index1 + taillesegment2;
+
+  for (int i = 0; i < taillesegment; i++)
+  {
+    cheminY->parcours[position + i] = temptab[i];
+  }
+
+}
+
+void transformationChemin(Chemin *cheminY,
+                          Chemin  cheminX, int amplitude)
+{
+ *cheminY = cheminX; /* *cheminY est au voisinage de cheminX suivant     */
+                     /*  l'amplitude. Apres *cheminY =  cheminX, ne plus */
+                     /*  modifier cheminX !!!                            */
+  int nbBoucle=myRandomMinMax(1,amplitude);
+  for(int i = 0;i< nbBoucle ; i++){
+    //tranformation(adreese chemin y)
+    inversion(cheminY);
+    //translation
+    
+  }
+  
     
 }
 
