@@ -1,0 +1,39 @@
+adrien.failler@21de031:~/Bureau/Recuit/Voyageur$ make clean
+rm -f recuitVoyageur.o geo.o random.o gnuplot.o recuitVoyageur core a.out
+adrien.failler@21de031:~/Bureau/Recuit/Voyageur$ make
+cc -c -W -Wall recuitVoyageur.c -o recuitVoyageur.o
+cc -c -W -Wall geo.c -o geo.o
+cc -c -W -Wall random.c -o random.o
+cc -c -W -Wall gnuplot.c -o gnuplot.o
+cc recuitVoyageur.o geo.o random.o gnuplot.o -o recuitVoyageur -lm
+adrien.failler@21de031:~/Bureau/Recuit/Voyageur$ ./recuitVoyageur
+Initialisation du generateur de nombres aleatoires
+TInit ?
+100
+TFin ?
+0.000001
+Alpha ?
+0.99
+Ampli (un int) ?
+1
+MaxRepetitions ?
+10000
+---> Parametres
+FNAME           f
+x0              ...
+FNAME(x0)       549.48
+Ti              100.00
+Tf              0.00
+alpha           0.99
+amplitude       1
+MaxRepetitions  10000
+<---
+Sauvegarde des resultats dans un fichier? (o/n)
+n
+Warning: empty x range [0:0], adjusting to [-1:1]
+Warning: empty y range [549.484:549.484], adjusting to [543.99:554.979]
+-------------------->
+Temperature a la fin de l'algorithme=0.000001
+Cout optimal (fxopt)=100.000000
+<--------------------
+adrien.failler@21de031:~/Bureau/Recuit/Voyageur$ 

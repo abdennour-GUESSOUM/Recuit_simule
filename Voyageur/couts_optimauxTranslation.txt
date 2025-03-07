@@ -1,0 +1,289 @@
+# Coûts optimaux pour différents paramètres du recuit simulé
+# Date: ven. 07 mars 2025 13:36:08 CET
+
+== Variation de la température initiale ==
+Test avec t_init = 100
+ Exécution 1/5
+Tinit=100_run1: 59.501842
+ Exécution 2/5
+Tinit=100_run2: 57.910171
+ Exécution 3/5
+Tinit=100_run3: 58.019397
+ Exécution 4/5
+Tinit=100_run4: 57.630148
+ Exécution 5/5
+Tinit=100_run5: 56.478180
+
+Test avec t_init = 500
+ Exécution 1/5
+Tinit=500_run1: 53.641146
+ Exécution 2/5
+Tinit=500_run2: 60.193551
+ Exécution 3/5
+Tinit=500_run3: 55.549248
+ Exécution 4/5
+Tinit=500_run4: 59.479029
+ Exécution 5/5
+Tinit=500_run5: 60.075136
+
+Test avec t_init = 1000
+ Exécution 1/5
+Tinit=1000_run1: 57.291626
+ Exécution 2/5
+Tinit=1000_run2: 57.223522
+ Exécution 3/5
+Tinit=1000_run3: 59.137757
+ Exécution 4/5
+Tinit=1000_run4: 54.740586
+ Exécution 5/5
+Tinit=1000_run5: 57.842281
+
+Test avec t_init = 5000
+ Exécution 1/5
+Tinit=5000_run1: 54.048250
+ Exécution 2/5
+Tinit=5000_run2: 60.615166
+ Exécution 3/5
+Tinit=5000_run3: 59.974309
+ Exécution 4/5
+Tinit=5000_run4: 54.666796
+ Exécution 5/5
+Tinit=5000_run5: 55.754109
+
+
+== Variation du facteur Tf ==
+Test avec Tfin = 10
+ Exécution 1/5
+Tfin=10_run1: 115.040627
+ Exécution 2/5
+Tfin=10_run2: 111.187707
+ Exécution 3/5
+Tfin=10_run3: 111.496873
+ Exécution 4/5
+Tfin=10_run4: 105.300333
+ Exécution 5/5
+Tfin=10_run5: 113.571314
+
+Test avec Tfin = 1
+ Exécution 1/5
+Tfin=1_run1: 81.260929
+ Exécution 2/5
+Tfin=1_run2: 80.062310
+ Exécution 3/5
+Tfin=1_run3: 70.520303
+ Exécution 4/5
+Tfin=1_run4: 72.240721
+ Exécution 5/5
+Tfin=1_run5: 67.465346
+
+Test avec Tfin = 0.1
+ Exécution 1/5
+Tfin=0.1_run1: 55.039001
+ Exécution 2/5
+Tfin=0.1_run2: 57.306608
+ Exécution 3/5
+Tfin=0.1_run3: 57.148915
+ Exécution 4/5
+Tfin=0.1_run4: 56.048787
+ Exécution 5/5
+Tfin=0.1_run5: 56.592002
+
+Test avec Tfin = 0.01
+ Exécution 1/5
+Tfin=0.01_run1: 53.319753
+ Exécution 2/5
+Tfin=0.01_run2: 56.919957
+ Exécution 3/5
+Tfin=0.01_run3: 58.622065
+ Exécution 4/5
+Tfin=0.01_run4: 55.407470
+ Exécution 5/5
+Tfin=0.01_run5: 56.678973
+
+Test avec Tfin = 0.001
+ Exécution 1/5
+Tfin=0.001_run1: 56.288545
+ Exécution 2/5
+Tfin=0.001_run2: 50.518041
+ Exécution 3/5
+Tfin=0.001_run3: 51.106709
+ Exécution 4/5
+Tfin=0.001_run4: 54.284365
+ Exécution 5/5
+Tfin=0.001_run5: 53.748384
+
+
+== Variation du facteur alpha ==
+Test avec alpha = 0.8
+ Exécution 1/5
+Alpha=0.8_run1: 68.445244
+ Exécution 2/5
+Alpha=0.8_run2: 73.773847
+ Exécution 3/5
+Alpha=0.8_run3: 71.411858
+ Exécution 4/5
+Alpha=0.8_run4: 67.380086
+ Exécution 5/5
+Alpha=0.8_run5: 61.029706
+
+Test avec alpha = 0.9
+ Exécution 1/5
+Alpha=0.9_run1: 65.295610
+ Exécution 2/5
+Alpha=0.9_run2: 57.007266
+ Exécution 3/5
+Alpha=0.9_run3: 67.298207
+ Exécution 4/5
+Alpha=0.9_run4: 62.586106
+ Exécution 5/5
+Alpha=0.9_run5: 60.334170
+
+Test avec alpha = 0.95
+ Exécution 1/5
+Alpha=0.95_run1: 57.097414
+ Exécution 2/5
+Alpha=0.95_run2: 57.665298
+ Exécution 3/5
+Alpha=0.95_run3: 52.798850
+ Exécution 4/5
+Alpha=0.95_run4: 60.966344
+ Exécution 5/5
+Alpha=0.95_run5: 56.264402
+
+Test avec alpha = 0.99
+ Exécution 1/5
+Alpha=0.99_run1: 53.621739
+ Exécution 2/5
+Alpha=0.99_run2: 51.261877
+ Exécution 3/5
+Alpha=0.99_run3: 50.025809
+ Exécution 4/5
+Alpha=0.99_run4: 52.087959
+ Exécution 5/5
+Alpha=0.99_run5: 46.769977
+
+
+== Variation de l'amplitude ==
+Test avec amplitude = 1
+ Exécution 1/5
+Amplitude=1_run1: 52.542676
+ Exécution 2/5
+Amplitude=1_run2: 48.977182
+ Exécution 3/5
+Amplitude=1_run3: 58.282133
+ Exécution 4/5
+Amplitude=1_run4: 50.741274
+ Exécution 5/5
+Amplitude=1_run5: 55.304620
+
+Test avec amplitude = 2
+ Exécution 1/5
+Amplitude=2_run1: 58.359473
+ Exécution 2/5
+Amplitude=2_run2: 56.163944
+ Exécution 3/5
+Amplitude=2_run3: 58.659897
+ Exécution 4/5
+Amplitude=2_run4: 57.356937
+ Exécution 5/5
+Amplitude=2_run5: 55.653604
+
+Test avec amplitude = 3
+ Exécution 1/5
+Amplitude=3_run1: 58.548338
+ Exécution 2/5
+Amplitude=3_run2: 60.889672
+ Exécution 3/5
+Amplitude=3_run3: 54.698381
+ Exécution 4/5
+Amplitude=3_run4: 59.518201
+ Exécution 5/5
+Amplitude=3_run5: 61.601286
+
+Test avec amplitude = 5
+ Exécution 1/5
+Amplitude=5_run1: 55.114297
+ Exécution 2/5
+Amplitude=5_run2: 67.676251
+ Exécution 3/5
+Amplitude=5_run3: 56.720821
+ Exécution 4/5
+Amplitude=5_run4: 62.814788
+ Exécution 5/5
+Amplitude=5_run5: 64.041686
+
+Test avec amplitude = 10
+ Exécution 1/5
+Amplitude=10_run1: 69.502530
+ Exécution 2/5
+Amplitude=10_run2: 65.668181
+ Exécution 3/5
+Amplitude=10_run3: 76.175592
+ Exécution 4/5
+Amplitude=10_run4: 71.091002
+ Exécution 5/5
+Amplitude=10_run5: 66.135929
+
+
+== Variation du nombre maximum de répétitions ==
+Test avec max_rep = 100
+ Exécution 1/5
+MaxRep=100_run1: 59.453705
+ Exécution 2/5
+MaxRep=100_run2: 61.615326
+ Exécution 3/5
+MaxRep=100_run3: 59.144179
+ Exécution 4/5
+MaxRep=100_run4: 59.184350
+ Exécution 5/5
+MaxRep=100_run5: 64.767472
+
+Test avec max_rep = 200
+ Exécution 1/5
+MaxRep=200_run1: 55.414533
+ Exécution 2/5
+MaxRep=200_run2: 57.912159
+ Exécution 3/5
+MaxRep=200_run3: 50.488164
+ Exécution 4/5
+MaxRep=200_run4: 54.665621
+ Exécution 5/5
+MaxRep=200_run5: 56.699069
+
+Test avec max_rep = 500
+ Exécution 1/5
+MaxRep=500_run1: 52.812719
+ Exécution 2/5
+MaxRep=500_run2: 49.232817
+ Exécution 3/5
+MaxRep=500_run3: 53.623727
+ Exécution 4/5
+MaxRep=500_run4: 49.494048
+ Exécution 5/5
+MaxRep=500_run5: 51.856959
+
+Test avec max_rep = 1000
+ Exécution 1/5
+MaxRep=1000_run1: 51.284167
+ Exécution 2/5
+MaxRep=1000_run2: 47.429553
+ Exécution 3/5
+MaxRep=1000_run3: 49.513813
+ Exécution 4/5
+MaxRep=1000_run4: 51.267436
+ Exécution 5/5
+MaxRep=1000_run5: 50.898967
+
+Test avec max_rep = 5000
+ Exécution 1/5
+MaxRep=5000_run1: 47.429553
+ Exécution 2/5
+MaxRep=5000_run2: 47.932254
+ Exécution 3/5
+MaxRep=5000_run3: 47.850340
+ Exécution 4/5
+MaxRep=5000_run4: 49.242801
+ Exécution 5/5
+MaxRep=5000_run5: 47.355763
+
+

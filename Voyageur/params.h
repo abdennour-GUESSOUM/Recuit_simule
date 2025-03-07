@@ -1,7 +1,7 @@
 #ifndef PARAM_H
 #define PARAM_H
 
-#define  NBVILLES    100
+#define  NBVILLES    30
 #define COTECARTE    10
 
 /*********************************************************************/

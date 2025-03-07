@@ -227,9 +227,9 @@ void transformationChemin(Chemin *cheminY,
                      /*  modifier cheminX !!!                            */
   int nbBoucle=myRandomMinMax(1,amplitude);
   for(int i = 0;i< nbBoucle ; i++){
-    //tranformation(adreese chemin y)
-    inversion(cheminY);
-    //translation
+    echange(cheminY);
+    //inversion(cheminY);
+    //translation(cheminY);
     
   }
   
