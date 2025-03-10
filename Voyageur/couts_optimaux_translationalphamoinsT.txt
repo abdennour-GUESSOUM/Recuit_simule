@@ -1,0 +1,65 @@
+# Coûts optimaux pour différents paramètres du recuit simulé
+# Date: lun. 10 mars 2025 18:34:46 CET
+
+== Variation de la température initiale ==
+Test avec t_alpha = 0.85
+ Exécution 1/5
+Talpha=0.85_run1: 66.827976
+ Exécution 2/5
+Talpha=0.85_run2: 65.378901
+ Exécution 3/5
+Talpha=0.85_run3: 68.051472
+ Exécution 4/5
+Talpha=0.85_run4: 64.400757
+ Exécution 5/5
+Talpha=0.85_run5: 71.319539
+
+Test avec t_alpha = 0.50
+ Exécution 1/5
+Talpha=0.50_run1: 62.730976
+ Exécution 2/5
+Talpha=0.50_run2: 64.938076
+ Exécution 3/5
+Talpha=0.50_run3: 60.852249
+ Exécution 4/5
+Talpha=0.50_run4: 66.775263
+ Exécution 5/5
+Talpha=0.50_run5: 60.970081
+
+Test avec t_alpha = 0.25
+ Exécution 1/5
+Talpha=0.25_run1: 57.802747
+ Exécution 2/5
+Talpha=0.25_run2: 52.794611
+ Exécution 3/5
+Talpha=0.25_run3: 54.416568
+ Exécution 4/5
+Talpha=0.25_run4: 57.847664
+ Exécution 5/5
+Talpha=0.25_run5: 58.309396
+
+Test avec t_alpha = 0.1
+ Exécution 1/5
+Talpha=0.1_run1: 57.540362
+ Exécution 2/5
+Talpha=0.1_run2: 56.620036
+ Exécution 3/5
+Talpha=0.1_run3: 56.217637
+ Exécution 4/5
+Talpha=0.1_run4: 56.673746
+ Exécution 5/5
+Talpha=0.1_run5: 52.248685
+
+Test avec t_alpha = 0.01
+ Exécution 1/5
+Talpha=0.01_run1: 
+ Exécution 2/5
+Talpha=0.01_run2: 
+ Exécution 3/5
+Talpha=0.01_run3: 
+ Exécution 4/5
+Talpha=0.01_run4: 
+ Exécution 5/5
+Talpha=0.01_run5: 
+
+

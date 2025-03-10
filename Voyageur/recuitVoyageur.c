@@ -227,9 +227,9 @@ void transformationChemin(Chemin *cheminY,
                      /*  modifier cheminX !!!                            */
   int nbBoucle=myRandomMinMax(1,amplitude);
   for(int i = 0;i< nbBoucle ; i++){
-    echange(cheminY);
+    //echange(cheminY);
     //inversion(cheminY);
-    //translation(cheminY);
+    translation(cheminY);
     
   }
   
@@ -282,7 +282,7 @@ void transformation(void) {  /* y est au voisinage de x suivant amplitude */
 
 /*________  Modification temperature  ____________________________________*/
 double g(void) {
-#if 1
+#if 0
  return(T * alpha);       /* On decroit la temperature en utilisant T * alpha */
 #else
  return(T-alpha);       /* On decroit la temperature en utilisant T - alpha */
