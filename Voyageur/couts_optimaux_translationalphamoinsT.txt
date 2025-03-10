@@ -50,16 +50,5 @@ Talpha=0.1_run4: 56.673746
  Exécution 5/5
 Talpha=0.1_run5: 52.248685
 
-Test avec t_alpha = 0.01
- Exécution 1/5
-Talpha=0.01_run1: 
- Exécution 2/5
-Talpha=0.01_run2: 
- Exécution 3/5
-Talpha=0.01_run3: 
- Exécution 4/5
-Talpha=0.01_run4: 
- Exécution 5/5
-Talpha=0.01_run5: 
 
 

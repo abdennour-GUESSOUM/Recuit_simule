@@ -1,0 +1,15 @@
+# Coûts optimaux pour différents nombre de ville du recuit simulé
+# Date: lun. 10 mars 2025 19:14:28 CET
+
+== Variation des villes ==
+ Exécution 1/5
+Talpha=_run1: 106.206631
+ Exécution 2/5
+Talpha=_run2: 106.792417
+ Exécution 3/5
+Talpha=_run3: 110.513767
+ Exécution 4/5
+Talpha=_run4: 106.384776
+ Exécution 5/5
+Talpha=_run5: 108.678767
+

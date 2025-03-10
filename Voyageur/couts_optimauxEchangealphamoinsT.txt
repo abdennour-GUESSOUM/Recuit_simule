@@ -51,3 +51,7 @@ Talpha=0.1_run4: 56.361854
 Talpha=0.1_run5: 53.740260
 
 
+Talpha=0.25_run5: 
+
+Test avec t_alpha = 0.1
+ Exécution 1/5

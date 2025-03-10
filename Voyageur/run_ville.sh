@@ -17,7 +17,7 @@ fi
 
 
 # Fichier pour sauvegarder les coûts optimaux
-COUTS_FILE="couts_optimaux_ville.txt"
+COUTS_FILE="couts_optimaux_ville2.txt"
 echo "# Coûts optimaux pour différents nombre de ville du recuit simulé" > "$COUTS_FILE"
 echo "# Date: $(date)" >> "$COUTS_FILE"
 echo "" >> "$COUTS_FILE"
@@ -67,7 +67,7 @@ EOF
 echo "== Variation des villes ==" | tee -a "$COUTS_FILE"
 for i in {1..5}; do
     echo " Exécution $i/5" | tee -a "$COUTS_FILE"
-    run_recuit_and_get_cost 100 0.01 $t_alpha 1 500 "Talpha" "${t_alpha}_run${i}"
+    run_recuit_and_get_cost 100 0.01 0.99 1 1000 "Talpha" "${t_alpha}_run${i}"
 done
 echo "" >> "$COUTS_FILE"
 

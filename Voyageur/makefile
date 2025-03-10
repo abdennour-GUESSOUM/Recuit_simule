@@ -3,7 +3,7 @@
 
 CC=cc
 
-TARGET=recuitVoyageur_translation
+TARGET=recuitVoyageur
 FILES=recuitVoyageur.c geo.c random.c gnuplot.c
 OBJECTS=$(FILES:.c=.o)
 CLEANING=rm -f $(OBJECTS) $(TARGET) core a.out

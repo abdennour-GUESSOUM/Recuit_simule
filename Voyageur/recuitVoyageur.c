@@ -282,7 +282,7 @@ void transformation(void) {  /* y est au voisinage de x suivant amplitude */
 
 /*________  Modification temperature  ____________________________________*/
 double g(void) {
-#if 0
+#if 1
  return(T * alpha);       /* On decroit la temperature en utilisant T * alpha */
 #else
  return(T-alpha);       /* On decroit la temperature en utilisant T - alpha */
